@@ -13,17 +13,17 @@ function decrement(){
 
 document.getElementById("subtrair").addEventListener("click",function(event){
     if(currentNumber <= 0){
-        document.getElementById("subtrair").disabled = true;
-        document.getElementById("subtrair").disabled = false;
+        decrement();
+        document.getElementById('currentNumber').style.color = 'red';
     }else{
         decrement();
     }
 });
 
 document.getElementById("adicionar").addEventListener("click",function(event){
-    if(currentNumber >= 10){
-        document.getElementById("adicionar").disabled = true;
-        document.getElementById("adicionar").disabled = false;
+    if(currentNumber >= -1){
+        document.getElementById('currentNumber').style.color = 'black';
+        increment();
     }else{
         increment();
     }
