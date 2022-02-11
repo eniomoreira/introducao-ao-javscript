@@ -4,7 +4,7 @@ var myNewArray = [];
 const mySet = new Set(myArray);
 
 //console.log(mySet);
-
+// Set funcionam como arrays mas nao possuem objetos repetidos
 for(let item of mySet){
     myNewArray.push(item);
 }
